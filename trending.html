@@ -1,0 +1,1252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categories</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+    *{
+        margin: 0;
+        padding: 0;
+
+    }
+    body{
+      background-image: url(./cool-background.png);
+            background-size: cover;
+            background-attachment: fixed;
+            font-family: Raleway, sans-serif;
+    }
+    .conatinerbox{
+        /* width: 100%;
+        height: 100%; */
+        margin-top: 50px ;
+        /* align-items: center; */
+        /* display: inline-table; */
+        /* justify-content: space-evenly; */
+       
+    }
+    h1{
+       color: white;
+       margin-left: 15px;
+    }
+
+   
+
+
+    .movbox{
+        display: flex;
+        justify-content: space-evenly;
+        width: 900px;
+        height: 430px;
+       
+    }
+    
+    @media (min-width:280px) and (max-width:800px){
+        .movbox{
+            align-items: center;
+            /* justify-content: center; */
+            display: block;
+            width: auto;
+            height: auto;
+        }
+        h1{
+       color: white;
+       margin-left: 15px;
+    }
+    }
+    @media (max-width:280px){
+        .movbox{
+            align-items: center;
+            /* justify-content: center; */
+            display: block;
+            width: auto;
+            height: auto;
+        }
+        h1{
+       color: white;
+       margin-left: 15px;
+    }
+    }
+
+    .navbar{
+      background-color: black;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.119);
+    }
+
+    .card{
+        /* width: 280px;
+        height: 400px; */
+        margin: 8px;
+        background-color: black;
+        color: white;
+        border: 2px solid white;
+        box-shadow: 7px 7px 30px whitesmoke;
+            background: linear-gradient(
+                to top,
+                transparent 1%,
+                rgb(0, 0, 0) 100%)
+    }
+
+    .row{
+      border-bottom: 2px solid rgba(255, 255, 255, 0.056);
+      /* background-color: black; */
+    }
+
+
+    .col-3{
+      color: white;
+    }
+
+
+
+    .num {
+      color: #b3b3b3;
+      border-left: 1px solid grey;
+    }
+
+    .title{
+      color: #b3b3b3;
+    }
+
+    .date{
+      color: #b3b3b3;
+      
+    }
+
+    .duration{
+      color: #b3b3b3;
+      border-right: 1px solid grey;
+    }
+#pgn{
+  margin-left: 500px;
+}
+
+
+#navbarDropdown:hover{
+        border-bottom: 2px solid rgb(5, 224, 224);
+       }
+
+#a:hover{
+  color: rgb(156, 53, 156);
+}
+
+#b:hover{
+  color: yellow;
+}
+#c:hover{
+  color: aqua;
+}
+#d:hover{
+  color: rgb(43, 84, 216);
+}
+
+#pic:hover{
+border-bottom: 3px solid aqua;
+}
+
+
+
+
+.col-3{
+      color: white;
+    }
+
+
+
+    .num {
+      color: #b3b3b3;
+      border-left: 1px solid grey;
+    }
+
+    .title{
+      color: #b3b3b3;
+    }
+
+    .date{
+      color: #b3b3b3;
+      
+    }
+
+    .duration{
+      color: #b3b3b3;
+      border-right: 1px solid grey;
+    }
+
+    .conatiner{
+      margin: 30px;
+    }
+.card{
+  transition: width 2s, height 2s, transform 0.2s;
+}
+
+.card:hover{
+      
+      -ms-transform: scale(1.1);  
+      -webkit-transform: scale(1.1); 
+      transform: scale(1.1);
+    }
+
+
+.col-3:hover{
+  border-bottom: 4px solid grey;
+}
+    #roww{
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .image{
+      position: relative;
+      flex: 1;
+      max-width: 480px;
+      height: 300px;
+      margin: 20px;
+      overflow: hidden;
+    }
+
+    .image img{
+      opacity: 0.8;
+      position: relative;
+      vertical-align: top;
+      transition: 0.6s;
+      transition-property: opacity;
+    }
+
+    .image:hover img{
+      opacity: 1;
+    }
+
+    .image .details{
+      z-index: 1;
+      position: absolute;
+      top: 0;
+      right: 0;
+      color: #fff;
+      width: 100%;
+      height: 100%;
+    }
+
+    .image .details h2{
+      text-align: center;
+      font-size: 35px;
+      text-transform: uppercase;
+      font-weight: 300;
+      margin-top: 70px;
+      transition: 0.4s;
+      transition-property: transform;
+    }
+
+    .image:hover .details h2{
+      transform: translateY(-30px);
+    }
+
+    .image .details p{
+      margin: 30px 30px 0 30px;
+      font-size: 20px;
+      font-weight: 600;
+      text-align: center;
+      opacity: 0;
+      transition: 0.6s;
+      transition-property: opacity, transform;
+    }
+
+    .image:hover .details p{
+      opacity: 1;
+      transform: translateY(-40px);
+    }
+
+    .more{
+      position: absolute;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px;
+      bottom:  -60px;
+      transition: 0.6s;
+      transition-property: bottom;
+    }
+
+    .image:hover .more{
+      bottom: 0;
+    }
+
+    .more .read-more{
+      color: white;
+      text-decoration: none;
+      font-size: 20px;
+      font-weight: 500;
+      text-transform: uppercase;
+    }
+
+    .more .icon-links i{
+      color: white;
+      font-size: 20px;
+    }
+
+    .more .icon-links a:not(:last-child) i{
+      margin-right: 20px;
+    }
+
+    @media (max-width: 1080px){
+      .image{
+        flex: 100%;
+        max-width: 480px;
+      }
+    }
+
+    @media (max-width: 480px){
+      .image .details p{
+        font-size: 16px;  
+      }
+    }
+    .more .read-more, .more .icon-links a i {
+      font-size: 20px;
+    }  
+
+    .feedback{
+  margin-left: 20px;
+  }
+
+  #ht{
+    margin-left: 430px;
+  }
+  @media (min-width:280px) and (max-width:768px){
+  .feedback{
+    padding-top: 10px;
+  }
+  #ht{
+    margin-left: 277px;
+  }
+  .map{
+    padding-right: 13px;
+  }
+  }
+
+  #navbarDropdown:hover{
+        border-bottom: 2px solid rgb(5, 224, 224);
+       }
+
+#a:hover{
+  color: rgb(156, 53, 156);
+}
+
+#b:hover{
+  color: yellow;
+}
+#c:hover{
+  color: aqua;
+}
+#d:hover{
+  color: rgb(43, 84, 216);
+}
+
+#pic:hover{
+border-bottom: 3px solid aqua;
+}
+
+</style>
+</head>
+<body>
+    
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container-fluid">
+            <div class="lgo">
+              </div>
+          <a class="navbar-brand" href="home.html"><h2><i class="fa-solid fa-music"></i><b> Sound Blast </b></h2></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" id="navbarDropdown" href="home.html">Home</a>
+              </li>
+             
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categories
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="trending.html">Trending</a></li>
+                  <li><a class="dropdown-item" href="trending.html">Top Artists</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="new release.html">New Release</a></li>
+                  <li><a class="dropdown-item" href="new release.html">Languages</a></li>
+                </ul>
+                <li class="nav-item">
+                    <a class="nav-link active" id="navbarDropdown" href="signin.html">Sign In</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" id="navbarDropdown" href="gallery.html">Gallery</a>
+                  </li>
+              </li>
+            </ul>
+
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search Songs" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Navbar Completed -->
+
+      <br><br><br><br>
+
+
+     
+
+      
+      <!-- trending start  -->
+      
+        
+        <div class="conatinerbox">
+          <div class="header">
+            <h1><b> Trending Songs </b></h1>
+            </div>
+          <br>
+  
+          <div class="container">
+            <div class="row">
+  
+  
+              <div class="col-3" id="new-release">
+                <div class="num">
+                 &nbsp; #
+                </div>
+              </div>
+  
+              
+  
+              <div class="col-3">
+                <div class="title">
+                  TITLE
+                </div>
+              </div>
+  
+              <div class="col-3">
+                <div class="date">
+                 DATE ADDED
+                </div>
+              </div>
+  
+              <div class="col-3">
+                <div class="views">
+                  VIEWS
+                </div>
+              </div>
+  
+  
+            </div>
+          </div>
+  <br>
+  
+          <div class="container">
+            <div class="row">
+  
+              <div class="col-3">
+                &nbsp;  1  
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <img src="./tr1.jpg" alt="" height="30px" width="40px">&nbsp; Shivers. Ed Sheeran. 
+                
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <small>2 days ago</small>
+               
+              </div>
+  
+  
+              <div class="col-3">
+               &nbsp; <small> 3 Million views </small>
+                
+               </div>
+  
+  
+            </div>
+          </div>
+  
+          
+          <div class="container">
+            <div class="row">
+  
+              <div class="col-3">
+                &nbsp;  2  
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <img src="./tr2.jpg" alt="" height="33px" width="40px">&nbsp; Levitating. Dua Lipa. 
+              </div>
+  
+  
+              <div class="col-3">
+               &nbsp;<small> 2 days ago </small>
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp;<small> 4 Million views </small>
+               </div>
+  
+  
+            </div>
+          </div>
+  
+          
+          
+  
+          <div class="container">
+            <div class="row">
+  
+              <div class="col-3">
+                &nbsp;  3  
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <img src="./tr3.jpg" alt="" height="30px" width="40px">&nbsp;  Unholy. Sam Smith 
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <small> 1 days ago </small>
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <small> 5 Million views </small>
+               </div>
+  
+  
+            </div>
+          </div>
+  
+  
+          
+  
+          <div class="container">
+            <div class="row">
+  
+              <div class="col-3">
+                &nbsp;  4  
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <img src="./tr4.jpg" alt="" height="30px" width="40px">&nbsp;  Loser. Charlie Puth.
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <small> 2 days ago </small>
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <small> 2 Million views </small>
+               </div>
+  
+  
+            </div>
+          </div>
+  
+  
+          
+  
+          <div class="container">
+            <div class="row">
+  
+              <div class="col-3">
+                &nbsp;  5 
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <img src="./tr5.jpg" alt="" height="30px" width="40px">&nbsp; The Motto. Tiësto 
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <small> 2 days ago </small>
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <small> 5 Million views  </small>
+               </div>
+  
+  
+            </div>
+          </div>
+  
+  
+         
+  
+          <div class="container">
+            <div class="row">
+  
+              <div class="col-3">
+                &nbsp;  6 
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <img src="./tr6.jpg" alt="" height="30px" width="40px">&nbsp; Calm Down - Rema.
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <small> 3 days ago </small>
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <small> 10 Million views </small>
+               </div>
+  
+  
+            </div>
+          </div>
+  
+  
+  
+          
+  
+          <div class="container">
+            <div class="row">
+  
+              <div class="col-3">
+                &nbsp;  7
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <img src="./tr7.jpg" alt="" height="30px" width="40px">&nbsp; Pour Me Water - Kizz Daniel.
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <small> 1 days ago </small>
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <small> 7.5 Million views </small>
+               </div>
+  
+  
+            </div>
+          </div>
+  
+  
+  
+  
+         
+  
+          <div class="container">
+            <div class="row">
+  
+              <div class="col-3">
+                &nbsp;  8
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <img src="./tr8.jpg" alt="" height="30px" width="40px">&nbsp; Zazoo Zehh - Portable ft Poco 
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <small> 2 days ago </small>
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <small> 13 Miilion views </small>
+               </div>
+  
+  
+            </div>
+          </div>
+  
+  
+  
+          
+  
+          <div class="container">
+            <div class="row">
+  
+              <div class="col-3">
+                &nbsp;  9
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <img src="./tr9.jpg" alt="" height="30px" width="40px">&nbsp; Baddest Boy Remix- Skiibi
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <small> 2 days ago </small>
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <small> 12 Million views</small>
+               </div>
+  
+  
+            </div>
+          </div>
+  
+  
+  
+  
+          
+          <div class="container">
+            <div class="row">
+  
+              <div class="col-3">
+                &nbsp;  10
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <img src="./tr10.jpg" alt="" height="30px" width="40px">&nbsp; Kesariya (From "Brahmastra")
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <small> 1 days ago </small>
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <small> 15 Million views</small>
+               </div>
+  
+  
+            </div>
+          </div>
+  
+  
+  
+  
+          
+  
+          <div class="container">
+            <div class="row">
+  
+              <div class="col-3">
+                &nbsp;  11
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <img src="./tr11.jpg" alt="" height="30px" width="40px">&nbsp; Heer Ranjha
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <small> 3 days ago </small>
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <small> 2 Million views </small>
+               </div>
+  
+  
+            </div>
+          </div>
+  
+  
+  
+  
+  
+  
+          
+  
+          <div class="container">
+            <div class="row">
+  
+              <div class="col-3">
+                &nbsp;  12
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <img src="./tr12.jpg" alt="" height="30px" width="40px">&nbsp;  Apna Bana Le.
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <small> 1 days ago </small>
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <small> 3 Million views   </small>
+               </div>
+  
+  
+            </div>
+          </div>
+  
+  
+  
+  
+          
+  
+  
+  
+          
+  
+          <div class="container">
+            <div class="row">
+  
+              <div class="col-3">
+                &nbsp;  13
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <img src="./tr13.jpg" alt="" height="30px" width="40px">&nbsp; Bas Tujhse Pyaar Ho.
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <small> 3 days ago </small>
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <small> 8 Million views </small>
+               </div>
+  
+  
+            </div>
+          </div>
+  
+  
+  
+  
+  
+  
+  
+          
+  
+          <div class="container">
+            <div class="row">
+  
+              <div class="col-3">
+                &nbsp;  14
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <img src="./tr14.jpg" alt="" height="30px" width="40px">&nbsp; Manike (From "Thank God")
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <small> 2 days ago </small>
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <small> 2.3 Milion views </small>
+               </div>
+  
+  
+            </div>
+          </div>
+  
+  
+  
+  
+  
+  
+  
+          
+  
+          <div class="container">
+            <div class="row">
+  
+              <div class="col-3">
+                &nbsp;  15
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <img src="./tr15.jpg" alt="" height="30px" width="40px">&nbsp; Kinna Sona.
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <small> 2 days ago </small>
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <small> 6.7 Million views </small>
+               </div>
+  
+  
+            </div>
+          </div>
+  
+  
+  
+  
+  
+  
+  
+  
+         
+  
+          <div class="container">
+            <div class="row">
+  
+              <div class="col-3">
+                &nbsp;  16
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <img src="./tr16.jpg" alt="" height="30px" width="40px">&nbsp; Brown Munde
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <small> 2 days ago </small>
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <small> 20 Million views </small>
+               </div>
+  
+  
+            </div>
+          </div>
+  
+  
+  
+  
+  
+  
+  
+          
+  
+          <div class="container">
+            <div class="row">
+  
+              <div class="col-3">
+                &nbsp;  17
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <img src="./tr17.jpg" alt="" height="28px" width="40px">&nbsp; Insane
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <small> 2 days ago </small>
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <small> 18 Million views </small>
+               </div>
+  
+  
+            </div>
+          </div>
+  
+  
+  
+  
+  
+  
+          
+  
+          <div class="container">
+            <div class="row">
+  
+              <div class="col-3">
+                &nbsp;  18
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <img src="./tr18.jpg" alt="" height="30px" width="40px">&nbsp; Into Your Arms
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <small> 1 days ago </small>
+              </div>
+  
+  
+              <div class="col-3">
+                &nbsp; <small> 13 Million views </small>
+               </div>
+  
+  
+            </div>
+          </div>
+  
+  
+  
+  
+  
+  
+  
+          
+  
+          
+  
+  
+            </div>
+          </div>
+  
+  
+  
+  
+           </div>
+        <br><br>
+
+      </div>
+
+
+
+      <!-- trending end -->
+
+
+
+      
+      <!-- artists -->
+      <div class="conatinerbox">
+        <div class="header">
+            <h1><b>Top Artists </b></h1>
+        </div>
+        <br>
+        <center>
+        <div class="movbox">
+            <div class="card" style="width: 18rem; height: 25rem;">
+                <center><img src="./edsheeran2.webp" style="height: 170px; width: 170px;" class="card-img-top" alt="..."></center>
+                <div class="card-body">
+                  <h5 class="card-title">ED-Sheeran</h5>
+                  <p class="card-text"><small> 
+                    <ul>
+                  <li> Christopher Sheeran MBE is an English singer-songwriter. </li>
+                  <li>  Born: February 17, 1991 (age 31 years), United Kingdom.</li>
+                   <li>Awards: Grammy Award for Song of the Year</li>
+                   <li>Nominations: Grammy Award for Album of the Year</li></small></p>
+                  </ul>
+
+                </div>
+            </div>
+
+            <br>
+
+            <div class="card" style="width: 18rem;height: 25rem;">
+                <center><img src="./justin.jpg" style="height: 170px; width: 170px;" class="card-img-top" alt="..."></center>
+                <div class="card-body">
+                  <h5 class="card-title">Justin Bieber</h5>
+                  <p class="card-text">
+                   <small>
+                    <ul>
+                   <li> Justin Drew Bieber is a Canadian singer. Bieber has played an influential role in modern-day popular music. </li>
+                    <li> Born: March 1, 1994 (age 28 years), London.</li>
+                   <li> Awards: American Music Award for Artist of the Year</li></small> </p>
+               </ul>
+                </div>
+            </div>
+
+            <br>
+
+            <div class="card" style="width: 18rem; height: 25rem;">
+                <center><img src="./Ariana.png" style="height: 170px; width: 170px;" class="card-img-top" alt="..."></center>
+                <div class="card-body">
+                  <h5 class="card-title">Ariana Grande</h5>
+                  <p class="card-text">
+                    <small>
+                    <ul>
+                      <li>Ariana Grande is a quite famous American singer, songwriter, and actress</li>
+                      <li>Born: June 26, 1993, Boca Raton</li>
+                      <li>Albums: My Everything, Sweetener, Dangerous </li>
+                      <li>Occupation: Singer; songwriter; actress</li>
+                      
+                      
+                      </ul>
+                    </small>
+                    
+                    
+                    
+                    </p>
+                
+                </div>
+            </div>
+         </div> 
+
+         <br>
+
+         <div class="movbox">
+            <div class="card" style="width: 18rem; height: 25rem;">
+             <center> <img src="atifaslam.jpg" class="card-img-top" style="height: 170px; width: 170px;" alt=".."></center>
+                <div class="card-body">
+                  <h5 class="card-title">Atif Aslam</h5>
+                  <p class="card-text">
+                    <small>
+                    <ul>
+
+                      <li>Atif Aslam is a Pakistani singer, songwriter, composer, and actor.</li>
+                      <li>Born: March 12, 1983 (age 39 years), Wazirabad</li>
+                      
+                      <li>Genre: Qawwali, Pop music, Rock, Classical music,</li>
+                      <li>Awards: Lux Style Award for Best Dressed Male,</li>
+                    </ul>
+
+                    </small>
+                  </p>
+                  
+                </div>
+            </div>
+
+
+            <br>
+
+            <div class="card" style="width: 18rem; height: 25rem;">
+                <img src="./nsfak.png" class="card-img-top" alt="..." style="height: 140px;">
+                <div class="card-body">
+                  <h5 class="card-title">Nusrat Fateh Ali Khan</h5>
+                  <p class="card-text">
+                    <small>
+                      <ul>
+                        <li>Ustad Nusrat Fateh Ali Khan PP was a Pakistani singer, songwriter, and music director.</li>
+                        <li>Born: October 13, 1948, Faisalabad</li>
+                        <li>Awards: IIFA Award for Best Lyricist, Lux Style Award for Icon of the Year</li>
+                        <li>Died: August 16, 1997, London</li>
+                      </ul>
+                    </small>
+                  </p>
+                   
+                </div>
+            </div>
+
+            <br>
+
+            <div class="card" style="width: 18rem; height: 25rem;">
+              <center><img src="./rahatboi.jpg" class="card-img-top" style="height: 150px; width: 170px; " alt="..."></center>  
+                <div class="card-body">
+                  <h5 class="card-title">Rahat Fateh Ali Khan</h5>
+                  <p class="card-text">
+                    <small>
+                      <ul>
+                        <li>Rahat Fateh Ali Khan is a Pakistani Singer, primarily of Qawwali.</li>
+                        <li>Born: December 9, 1974 (age 47 years), Faisalabad</li>
+                        <li>	Awards: Lux Style Award,ARY Film Award and many more</li>
+                        <li>Instrument(s): Vocals; Harmonium</li>
+                      </ul>
+                    </small>
+                  </p>
+                  
+                </div>
+            </div>
+          </center>
+         </div> 
+
+
+      </div>
+
+      <br><br>
+
+      <!-- artists end -->
+
+
+       <!-- Footer -->
+       <section class="footer">
+        <div class="social">
+            <a href="https://www.instagram.com"><i class="fab fa-instagram" id="a"></i></a>
+            <a href="https://www.snapchat.com"><i class="fab fa-snapchat" id="b"></i></a>
+            <a href="https://www.twitter.com"><i class="fab fa-twitter" id="c"></i></a>
+            <a href="https://www.facebook.com"><i class="fab fa-facebook-f" id="d"></i></a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="#" id="pic">Home</a>
+            </li>
+            <li>
+                <a href="#" id="pic">services</a>
+            </li>
+            <li>
+                <a href="#" id="pic">About</a>
+            </li>
+            <li>
+                <a href="#" id="pic">Terms</a>
+            </li>
+            <li>
+                <a href="#" id="pic">Privacy Policy</a>
+            </li>
+        </ul>
+        <p class="copyright">
+           <a href="#">Sound Blast @ 2022</a> 
+        </p>
+
+
+        
+        <div class="container">
+          <div class="row">
+
+        <div class="col-md-5">
+          <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.7979757129197!2d67.04275931398878!3d24.93895128401689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f3daae54d55%3A0x5dae2a3a4b71f12a!2sAptech%20Learning%20North%20Nazimabad%20II%20Center!5e0!3m2!1sen!2s!4v1669389465381!5m2!1sen!2s" width="380px" height="180px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </div>
+
+        <dvi class="col-md-2"></dvi>
+
+        <div class="col-md-5">
+          
+        <div class="feedback">
+        <textarea name="message" class="form-control" placeholder="Feedback (max 300 characters)" rows="7" maxlength="300" required=""></textarea>
+        <br>
+          <button type="button" class="btn btn-primary" id="ht">Submit</button>
+      </div>  
+
+
+      </div>
+
+
+      </div>
+      </div>
+
+     </section>
+     
+
+     <!-- footer ends -->
+
+     
+</body>
+</html>

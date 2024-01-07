@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sound Blast</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img-logo.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700;800&display=swap');
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Raleway, sans-serif;
+            background-image: url(./cool-background.png);
+            /* background-image: url("data:image/svg+xml,%3Csvg width='52' height='26' viewBox='0 0 52 26' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23000000' fill-opacity='0.22'%3E%3Cpath d='M10 10c0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6h2c0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4 3.314 0 6 2.686 6 6 0 2.21 1.79 4 4 4v2c-3.314 0-6-2.686-6-6 0-2.21-1.79-4-4-4-3.314 0-6-2.686-6-6zm25.464-1.95l8.486 8.486-1.414 1.414-8.486-8.486 1.414-1.414z' /%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); */
+            background-size: cover;
+            background-attachment: fixed;
+             background-repeat: no-repeat; 
+            
+        }
+
+        
+        .about{
+            /* background-color: wheat; */
+            border: 2px solid snow;
+            color: white;
+            width: 600px;
+            height: 250px;
+            margin: 50px; margin-left: 150px;
+            padding: 25px;
+            font-size: x-large;
+            box-shadow: 7px 7px 30px whitesmoke;
+            background: linear-gradient(
+                to top,
+                transparent 1%,
+                rgb(0, 0, 0) 100%
+            );
+            /* animation: color 5s infinite; */
+            /* display: flex; */
+            
+        }
+        
+        .services{
+            border: 2px solid snow;
+            color: white;
+            width: 600px;
+            height: 280px;
+            box-shadow: 7px 7px 30px whitesmoke;
+            font-size: x-large;
+            padding: 25px;
+            margin-bottom: 50px;
+            margin-left: 400px;
+            margin-right: 40px;
+            background: linear-gradient(
+                to top,
+                transparent 2%,
+                rgb(0, 0, 0) 100%
+            );
+            /* animation: color 5s infinite; */
+        }
+        /* @keyframes color {
+            0%{color: orange;}
+            10%{color: purple;}
+            20%{color: red;}
+            30%{color: cadetblue;}
+            40%{color: yellow;}
+            50%{color: coral;}
+            60%{color: green;}
+            70%{color: cyan;}
+            80%{color: deeppink;}
+            90%{color: dodgerblue;}
+            100%{color: orange;}
+        } */
+
+        @media ( min-width:0px) and (max-width:900px){
+            .about{
+                font-size: medium;
+                margin: 10px; margin-top: 10px;
+                width: auto;
+                height: auto;
+                /* position: relative; */
+            }
+            .services{
+                font-size: medium; 
+                margin: 10px; margin-top: 10px;
+                width: auto;
+                height: auto;
+               /* position: relative; */
+            }
+        }
+        
+        
+        /* @media (min-width:900px){
+            .about{
+                font-size: medium;
+                margin: 10px; margin-top: 10px;
+                width: auto;
+                height: auto;
+               
+            }
+            .services{
+                font-size: medium; 
+                margin: 10px; margin-top: 10px;
+                width: auto;
+                height: auto;
+              
+            }
+        } */
+
+
+        .conatinerbox{
+        /* width: 100%;
+        height: 100%; */
+        margin-top: 50px ;
+        /* align-items: center; */
+        /* display: inline-table; */
+        /* justify-content: space-evenly; */
+       
+    }
+    h1{
+       color: white;
+    }
+    .movbox{
+        display: flex;
+        justify-content: space-evenly;
+        /* align-items: ; */
+        /* background-color: aqua; */
+        width: 900px;
+        height: 430px;
+        /* margin-left: 50px; */
+       
+    }
+    
+    @media (min-width:280px) and (max-width:800px){
+        .movbox{
+            align-items: center;
+            /* justify-content: center; */
+            display: block;
+            /* margin-left:100px ; */
+            width: auto;
+            height: auto;
+        }
+       
+    }
+    @media (max-width:280px){
+        .movbox{
+            align-items: center;
+            /* justify-content: center; */
+            display: block;
+            margin-left:0px ;
+            width: auto;
+            height: auto;
+        }
+    }
+
+    .page-link{
+      box-shadow: 5px 5px 30px rgba(245, 245, 245, 0.495) ;
+      background-color: rgba(211, 211, 211, 0.04);
+      color: white;
+    }
+
+    .card{
+        width: 150px;
+        height: 400px;
+        margin: 7px;
+        border: 2px solid whitesmoke;
+        box-shadow: 5px 5px 30px whitesmoke;
+        background-color: rgba(211, 211, 211, 0.04);
+        color: white;
+        transition: width 2s, height 2s, transform s;
+        
+        
+    }
+
+    .card:hover{
+      /* transform: rotate(360deg); */
+      -ms-transform: scale(1.1);  /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+      -webkit-transform: scale(1.1); 
+      transform: scale(1.1);
+    }
+
+    .navbar{
+      background-color: black;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.119);
+    }
+    @media screen and (max-width: 768px){
+        .card{
+        width: 180px;
+        margin:20px;
+        border: 2px solid whitesmoke;
+        box-shadow: 5px 5px 30px whitesmoke;
+        background-color: rgba(211, 211, 211, 0.04);
+        color: white;
+        transition: width 2s, height 2s, transform s;    
+    } 
+    }
+
+
+    
+ 
+       #navbarDropdown:hover{
+        border-bottom: 2px solid rgb(5, 224, 224);
+       }
+
+#a:hover{
+  color: rgb(156, 53, 156);
+}
+
+#b:hover{
+  color: yellow;
+}
+#c:hover{
+  color: aqua;
+}
+#d:hover{
+  color: rgb(43, 84, 216);
+}
+
+#pic:hover{
+border-bottom: 3px solid aqua;
+}
+
+.feedback{
+  margin-left: 20px;
+}
+
+#ht{
+    margin-left: 430px;
+  }
+
+@media (min-width:280px) and (max-width:768px){
+  .feedback{
+    padding-top: 10px;
+  }
+  #ht{
+    margin-left: 277px;
+  }
+  .map{
+    padding-right: 13px;
+  }
+}
+
+
+    </style>
+
+</head>
+<body>
+  
+    
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+        <div class="container-fluid">
+            <div class="lgo">
+              <!-- <i class="fa-thin fa-music"></i> -->
+              </div>
+          <a class="navbar-brand" href="home.html"><h2><i class="fa-solid fa-music"></i><b> Sound Blast </b></h2></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" id="navbarDropdown" aria-current="page" href="home.html">Home</a>
+              </li>
+              
+             
+              <li class="nav-item dropdown">
+                <a class="nav-link active dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categories
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="trending.html" id="navbarDropdown" >Trending</a></li>
+                  <li><a class="dropdown-item" href="trending.html" id="navbarDropdown" >Top Artists</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="new release.html" id="navbarDropdown" >New Release</a></li>
+                  <li><a class="dropdown-item" href="new release.html" id="navbarDropdown" >Languages</a></li>
+                </ul>
+                <li class="nav-item">
+                    <a class="nav-link active" id="navbarDropdown" href="signin.html">Sign In</a>
+                  </li>
+                  
+                  <li class="nav-item">
+                    <a class="nav-link active" id="navbarDropdown" href="gallery.html">Gallery</a>
+                  </li>
+              </li>
+             
+            </ul>
+
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search Songs" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <!-- Navbar Completed -->
+<br><br>
+
+
+
+      <!-- Advertisement Banner Start -->
+      <div class="container">
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="song-3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+
+
+          <div class="carousel-item">
+            <img src="song-1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+
+
+          <div class="carousel-item">
+            <img src="song-2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+
+
+          <div class="carousel-item">
+              <img src="song-5.jpg" class="d-block w-100" alt="...">
+              <div class="carousel-caption d-none d-md-block">
+              </div>
+            </div>
+
+
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+     <!-- Advertisement Banner Ended -->
+
+
+     <br><br>
+
+
+      <!-- Genres -->
+
+      <div class="conatinerbox">
+        <div class="header">
+          <center>
+            <h1><b><big> Genres </big></b></h1>
+            </center>
+        </div>
+        <center>
+        <div class="movbox">
+            <div class="card " style="width: 18rem; height: 20rem;" >
+                <img src="./bn4.jpg" class="card-img-top" alt="..." style="height:260px ;">
+                <div class="card-body">
+                  <h4 class="card-title"> POP </h4>
+                 
+                </div>
+            </div>
+            
+
+            <div class="card " style="width: 18rem;height: 20rem;">
+                <img src="./hip-hop.jpeg" class="card-img-top" alt="..." style="height: 260px;">
+                <div class="card-body">
+                  <h4 class="card-title">RAP & HIP-HOP</h4>
+                </div>
+            </div>
+
+
+            <div class="card " style="width: 18rem; height: 20rem;">
+                <img src="./hm2.png" class="card-img-top" alt="..." style="height:260px ;">
+                <div class="card-body">
+                  <h4 class="card-title">Indie</h4>
+                </div>
+            </div>
+         </div> 
+         <br>
+
+         <div class="movbox">
+            <div class="card" style="width: 18rem; height: 20rem;">
+                <img src="./hm3.jpeg" class="card-img-top" alt="..." style="height: 260px;">
+                <div class="card-body">
+                  <h4 class="card-title">K-POP</h4>
+
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem; height: 20rem;">
+                <img src="./hm4.jpg" class="card-img-top" alt="..." style="height: 260px;">
+                <div class="card-body">
+                  <h4 class="card-title">JAZZ</h4>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem; height: 20rem;">
+                <img src="./hm6.jpg" class="card-img-top" alt="..." style="height: 260px;">
+                <div class="card-body">
+                  <h4 class="card-title">CLASSICAL</h4>
+                </div>
+            </div>
+         </div> 
+         <br>
+
+         <div class="movbox">
+            <div class="card" style="width: 18rem; height: 20rem;">
+                <img src="./hm5.jpeg" class="card-img-top" alt="..." style="height: 260px;">
+                <div class="card-body">
+                  <h4 class="card-title">INSTRUMENTAL</h4>
+
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem; height: 20rem;">
+                <img src="./hm7.jpg" class="card-img-top" alt="..." style="height: 260px;">
+                <div class="card-body">
+                  <h4 class="card-title">PARTY</h4>
+                </div>
+            </div>
+
+            <div class="card" style="width: 18rem; height: 20rem;">
+                <img src="./hm8.jpg" class="card-img-top" alt="..." style="height: 260px;">
+                <div class="card-body">
+                  <h4 class="card-title">MOOD</h4>
+                </div>
+              </center>
+            </div>
+         </div>
+        
+
+         <br><br>
+         
+      </div>
+   
+      <!-- Genres end -->
+
+
+
+
+     <!-- About Us & services-->
+     <div class="about" id="box1">
+        <h2>About Us</h2>
+        <p>With Sound Blast, it's easy to find the right music for every moment 
+
+          
+          
+          You can also browse through the collections of friends, artists, and celebrities, or create a radio station and just sit back.
+          
+          </p>
+     </div>
+     <div class="services" id="box2">
+        <h2>Our Services</h2>
+        <p>We provide entertainment through latest songs. <br> Our services are available to all people around the globe.</p>
+     </div>
+
+     <!-- About Us & services ends -->
+
+     <br><br><br>
+
+     <!-- Footer -->
+     <section class="footer">
+        <div class="social">
+            <a href="https://www.instagram.com"><i class="fab fa-instagram" id="a"></i></a>
+            <a href="https://www.snapchat.com"><i class="fab fa-snapchat" id="b"></i></a>
+            <a href="https://twitter.com"><i class="fab fa-twitter" id="c"></i></a>
+            <a href="https://facebook.com"><i class="fab fa-facebook-f" id="d"></i></a>
+        </div>
+
+        <ul class="list">
+            <li>
+                <a href="#" id="pic">Home</a>
+            </li>
+            <li>
+                <a href="#" id="pic">services</a>
+            </li>
+            <li>
+                <a href="#" id="pic">About</a>
+            </li>
+            <li>
+                <a href="#" id="pic">Terms</a>
+            </li>
+            <li>
+                <a href="#" id="pic">Privacy Policy</a>
+            </li>
+        </ul>
+        <p class="copyright">
+           <a href="#">Sound Blast @ 2022</a> 
+        </p>
+
+
+        <div class="container">
+          <div class="row">
+
+        <div class="col-md-5">
+          <div class="map">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3617.7979757129197!2d67.04275931398878!3d24.93895128401689!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33f3daae54d55%3A0x5dae2a3a4b71f12a!2sAptech%20Learning%20North%20Nazimabad%20II%20Center!5e0!3m2!1sen!2s!4v1669389465381!5m2!1sen!2s" width="380px" height="180px" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </div>
+
+        <dvi class="col-md-2"></dvi>
+
+        <div class="col-md-5">
+          
+        <div class="feedback">
+        <textarea name="message" class="form-control" placeholder="Feedback (max 300 characters)" rows="7" maxlength="300" required=""></textarea>
+        <br>
+          <button type="button" class="btn btn-primary" id="ht">Submit</button>
+      </div>  
+
+
+      </div>
+
+
+      </div>
+      </div>
+
+      
+     </section>
+
+     <!-- footer ends -->
+
+
+
+
+
+</body>
+</html>
